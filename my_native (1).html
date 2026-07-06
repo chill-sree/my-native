@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MY NATIVE</title>
+<style>
+    * { box-sizing: border-box; }
+
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: linear-gradient(180deg, #012a4a 0%, #013a63 15%, #01497c 35%, #0582ca 60%, #89c2d9 85%, #d9f2f5 100%);
+        background-attachment: fixed;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: #eaf6f8;
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    /* Floating bubbles */
+    body::before, body::after {
+        content: "";
+        position: fixed;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.08);
+        pointer-events: none;
+    }
+    body::before {
+        width: 180px; height: 180px;
+        top: 10%; left: -60px;
+    }
+    body::after {
+        width: 260px; height: 260px;
+        bottom: 5%; right: -80px;
+    }
+
+    .wrap {
+        position: relative;
+        z-index: 2;
+        padding: 30px 20px 0;
+    }
+
+    h1 {
+        font-size: 44px;
+        color: #ffffff;
+        margin-bottom: 5px;
+        letter-spacing: 4px;
+        text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+        font-size: 32px;
+        color: #caf0f8;
+        margin-top: 0;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+    }
+
+    h2::after {
+        content: "🌊";
+        display: block;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .photo-frame {
+        display: inline-block;
+        padding: 8px;
+        margin: 25px 0;
+        background: rgba(255,255,255,0.15);
+        border: 2px solid rgba(255,255,255,0.4);
+        border-radius: 18px;
+        backdrop-filter: blur(4px);
+    }
+
+    .photo {
+        width: 70vw;
+        max-width: 600px;
+        display: block;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,10,30,0.5);
+    }
+
+    table {
+        margin: 30px auto;
+        border-collapse: collapse;
+        width: 60%;
+        min-width: 320px;
+        background: rgba(255,255,255,0.12);
+        backdrop-filter: blur(6px);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,10,30,0.4);
+    }
+
+    th, td {
+        border: 1px solid rgba(255,255,255,0.25);
+        padding: 14px 20px;
+        font-size: 17px;
+    }
+
+    th {
+        background-color: rgba(1,73,124,0.85);
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+
+    td {
+        background-color: rgba(255,255,255,0.06);
+        color: #eaf6f8;
+    }
+
+    tr:nth-child(even) td {
+        background-color: rgba(255,255,255,0.14);
+    }
+
+    .about {
+        max-width: 750px;
+        margin: 10px auto 0;
+        text-align: justify;
+        font-size: 17px;
+        line-height: 1.75;
+        background: rgba(255,255,255,0.12);
+        backdrop-filter: blur(6px);
+        padding: 22px 28px;
+        border-radius: 14px;
+        box-shadow: 0 8px 20px rgba(0,10,30,0.4);
+        color: #f0fbfd;
+    }
+
+    .about h3 {
+        color: #caf0f8;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
+
+    .waves {
+        display: block;
+        width: 100%;
+        line-height: 0;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <h1>MY NATIVE</h1>
+    <h2>KANYAKUMARI</h2>
+
+    <div class="photo-frame">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kanyakumari_Beach.jpg/1280px-Kanyakumari_Beach.jpg" alt="Beautiful view of Kanyakumari">
+    </div>
+
+    <table>
+        <tr>
+            <th>Details</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Population</td>
+            <td>19,739 (2011 Census)</td>
+        </tr>
+        <tr>
+            <td>Latitude</td>
+            <td>8.0883° N</td>
+        </tr>
+        <tr>
+            <td>Longitude</td>
+            <td>77.5385° E</td>
+        </tr>
+        <tr>
+            <td>Area (Square Kilometers)</td>
+            <td>25.89 sq. km</td>
+        </tr>
+    </table>
+
+    <div class="about">
+        <h3>🐚 About Kanyakumari 🐚</h3>
+        <p>
+            Kanyakumari, also known as Kanniyakumari and formerly called Cape Comorin, is a small yet
+            world-famous town located at the very southern tip of the Indian peninsula in the state of
+            Tamil Nadu. It holds the unique distinction of being the meeting point of three great water
+            bodies — the Arabian Sea, the Bay of Bengal, and the Indian Ocean. Visitors from across the
+            globe travel here to witness the breathtaking sight of the sun rising and setting over the
+            same horizon of ocean waters. The town is home to several iconic landmarks, including the
+            towering Thiruvalluvar Statue, the Vivekananda Rock Memorial, and the ancient Kanyakumari
+            Amman Temple, which give the place deep spiritual and cultural significance. Surrounded by
+            golden beaches, colourful markets, and a rich blend of Tamil traditions, Kanyakumari is not
+            just a geographical landmark but a place brimming with history, natural beauty, and
+            spiritual energy, making it one of the most cherished destinations in all of India.
+        </p>
+    </div>
+</div>
+
+<!-- Animated ocean waves at the bottom -->
+<svg class="waves" viewBox="0 0 1200 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,80 C200,150 400,10 600,80 C800,150 1000,10 1200,80 L1200,150 L0,150 Z" fill="#0582ca" opacity="0.5">
+        <animate attributeName="d" dur="6s" repeatCount="indefinite"
+            values="M0,80 C200,150 400,10 600,80 C800,150 1000,10 1200,80 L1200,150 L0,150 Z;
+                    M0,60 C200,10 400,150 600,60 C800,10 1000,150 1200,60 L1200,150 L0,150 Z;
+                    M0,80 C200,150 400,10 600,80 C800,150 1000,10 1200,80 L1200,150 L0,150 Z" />
+    </path>
+    <path d="M0,100 C200,40 400,160 600,100 C800,40 1000,160 1200,100 L1200,150 L0,150 Z" fill="#023e7d">
+        <animate attributeName="d" dur="8s" repeatCount="indefinite"
+            values="M0,100 C200,40 400,160 600,100 C800,40 1000,160 1200,100 L1200,150 L0,150 Z;
+                    M0,120 C200,160 400,40 600,120 C800,160 1000,40 1200,120 L1200,150 L0,150 Z;
+                    M0,100 C200,40 400,160 600,100 C800,40 1000,160 1200,100 L1200,150 L0,150 Z" />
+    </path>
+</svg>
+
+</body>
+</html>
